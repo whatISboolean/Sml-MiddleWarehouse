@@ -1,0 +1,174 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+}
+
+.index-brand {
+    /*background: url("../images/home.png") no-repeat center;*/
+    height: 200px;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.navbar-custom {
+    background-color: #333b47;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.table > :not(:first-child) {
+    border-top: unset !important;
+}
+
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+body {
+    min-height: 100vh !important;
+    background-color: #f5f7fb;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+}
+
+.fixmenu {
+    padding-left: 20px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #6c757d;
+    border-right: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 992px) {
+    .fixmenu {
+        padding-left: unset;
+        padding-top: 6px;
+        height: 50px;
+        text-align: center;
+        width: 114px;
+        font-weight: 400;
+        border-right: 1px solid #6c757d;
+        border-bottom: 0;
+    }
+}
+
+div.input-group > div.input-group > span.input-group-addon:not(:last-child) {
+    border-radius: 0px !important;
+}
+
+.matcolor_R {
+    color: dodgerblue;
+}
+
+.matcolor_F {
+    color: seagreen;
+}
+
+.matcolor_D {
+    color: darkorange;
+}
+
+.table thead > tr > th {
+    /*  border-top: none;
+  border-bottom: none;*/
+    font-weight: 500;
+}
+
+.table-centered td {
+    vertical-align: middle !important;
+}
+
+.ratio-sidebar {
+    height: calc(100vh - 50px);
+    width: 240px !important;
+    z-index: 1000;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bg-yellow {
+    background-color: lightyellow !important;
+}
+
+.inputtextbox {
+    display: block;
+    min-height: calc(1.5em + .5rem + 2px);
+    border: rgb(206,212,218) 1px solid;
+    border-radius: 0.2rem;
+    background-color: lightyellow;
+    text-align: center;
+    word-wrap: normal;
+    min-width: 90px;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.4;
+    font-weight: normal !important;
+}
+
+.tbl-noborder {
+    border: 0px solid transparent !important;
+}
+
+.badge-dark-lighten {
+    color: #313a46;
+    background-color: rgba(49,58,70,.18);
+}
+
+.badge-primary-lighten {
+    color: #727cf5;
+    background-color: rgba(114,124,245,.18);
+}
+
+.badge-outline-primary {
+    color: #727cf5;
+    border: 1px solid #727cf5;
+    background-color: transparent;
+}
+
+.badge-outline-secondary {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    background-color: transparent;
+}
+
+.modal-filled {
+    color: #fff;
+}
+
+.bg-danger {
+    background-color: #fa5c7c !important;
+}
+
+.bg-success {
+    background-color: #0acf97 !important;
+}
+
+.alert-success {
+    color: #067c5b;
+    background-color: #cef5ea;
+    border-color: #b6f1e0;
+}
+
+.alert-danger {
+    color: #96374a;
+    background-color: #fedee5;
+    border-color: #feced8;
+}

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SmlSystemA.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TD_FDP1111">
+          <Key>
+            <PropertyRef Name="SEQNO" />
+            <PropertyRef Name="LOTNO" />
+            <PropertyRef Name="RKEIM" />
+          </Key>
+          <Property Name="SEQNO" Type="decimal" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="SCN_IND" Type="datetime" />
+          <Property Name="SCN_INT" Type="datetime" />
+          <Property Name="SCN_INPIC" Type="decimal" Precision="6" Scale="0" />
+          <Property Name="SCN_OUTD" Type="datetime" />
+          <Property Name="SCN_OUTT" Type="datetime" />
+          <Property Name="SCN_OUTPIC" Type="decimal" Precision="6" Scale="0" />
+          <Property Name="LOTNO" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="RKEIM" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="THEO_QTY" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="ACT_QTY" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="SCN_INQ" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="SCN_OUTQ" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="KSNDAT" Type="datetime" />
+          <Property Name="KSNTIM" Type="datetime" />
+          <Property Name="FLG1" Type="int" />
+          <Property Name="LOC_NO" Type="varchar" MaxLength="10" />
+          <Property Name="PUT_IN" Type="int" />
+          <Property Name="PUT_DATE" Type="datetime" />
+          <Property Name="PUT_TIME" Type="datetime" />
+          <Property Name="PUT_PIC" Type="decimal" Precision="6" Scale="0" />
+          <Property Name="OUT_DATE" Type="datetime" />
+          <Property Name="OUT_TIME" Type="datetime" />
+          <Property Name="OUT_PIC" Type="decimal" Precision="6" Scale="0" />
+          <Property Name="TANSUU" Type="decimal" Precision="14" Scale="4" />
+        </EntityType>
+        <EntityType Name="TD_FDP1115">
+          <Key>
+            <PropertyRef Name="CAB" />
+            <PropertyRef Name="RACK" />
+            <PropertyRef Name="PLACE" />
+          </Key>
+          <Property Name="CAB" Type="nvarchar" MaxLength="2" Nullable="false" />
+          <Property Name="RACK" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="PLACE" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="NMODEL" Type="varchar" MaxLength="20" />
+          <Property Name="TYPE" Type="varchar" MaxLength="20" />
+          <Property Name="LIMIT" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="TQTY" Type="decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="SmlSystemAStoreContainer">
+          <EntitySet Name="TD_FDP1111" EntityType="Self.TD_FDP1111" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TD_FDP1115" EntityType="Self.TD_FDP1115" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SmlSystemA" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TD_FDP1111">
+          <Key>
+            <PropertyRef Name="SEQNO" />
+            <PropertyRef Name="LOTNO" />
+            <PropertyRef Name="RKEIM" />
+          </Key>
+          <Property Name="SEQNO" Type="Decimal" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="SCN_IND" Type="DateTime" Precision="3" />
+          <Property Name="SCN_INT" Type="DateTime" Precision="3" />
+          <Property Name="SCN_INPIC" Type="Decimal" Precision="6" Scale="0" />
+          <Property Name="SCN_OUTD" Type="DateTime" Precision="3" />
+          <Property Name="SCN_OUTT" Type="DateTime" Precision="3" />
+          <Property Name="SCN_OUTPIC" Type="Decimal" Precision="6" Scale="0" />
+          <Property Name="LOTNO" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RKEIM" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="THEO_QTY" Type="Decimal" Precision="14" Scale="4" />
+          <Property Name="ACT_QTY" Type="Decimal" Precision="14" Scale="4" />
+          <Property Name="SCN_INQ" Type="Decimal" Precision="14" Scale="4" />
+          <Property Name="SCN_OUTQ" Type="Decimal" Precision="14" Scale="4" />
+          <Property Name="KSNDAT" Type="DateTime" Precision="3" />
+          <Property Name="KSNTIM" Type="DateTime" Precision="3" />
+          <Property Name="FLG1" Type="Int32" />
+          <Property Name="LOC_NO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PUT_IN" Type="Int32" />
+          <Property Name="PUT_DATE" Type="DateTime" Precision="3" />
+          <Property Name="PUT_TIME" Type="DateTime" Precision="3" />
+          <Property Name="PUT_PIC" Type="Decimal" Precision="6" Scale="0" />
+          <Property Name="OUT_DATE" Type="DateTime" Precision="3" />
+          <Property Name="OUT_TIME" Type="DateTime" Precision="3" />
+          <Property Name="OUT_PIC" Type="Decimal" Precision="6" Scale="0" />
+          <Property Name="TANSUU" Type="Decimal" Precision="14" Scale="4" />
+        </EntityType>
+        <EntityType Name="TD_FDP1115">
+          <Key>
+            <PropertyRef Name="CAB" />
+            <PropertyRef Name="RACK" />
+            <PropertyRef Name="PLACE" />
+          </Key>
+          <Property Name="CAB" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RACK" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PLACE" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NMODEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="LIMIT" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="TQTY" Type="Decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="SmlSystemAEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TD_FDP1111" EntityType="Self.TD_FDP1111" />
+          <EntitySet Name="TD_FDP1115" EntityType="Self.TD_FDP1115" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SmlSystemAStoreContainer" CdmEntityContainer="SmlSystemAEntities">
+          <EntitySetMapping Name="TD_FDP1111">
+            <EntityTypeMapping TypeName="SmlSystemA.TD_FDP1111">
+              <MappingFragment StoreEntitySet="TD_FDP1111">
+                <ScalarProperty Name="SEQNO" ColumnName="SEQNO" />
+                <ScalarProperty Name="SCN_IND" ColumnName="SCN_IND" />
+                <ScalarProperty Name="SCN_INT" ColumnName="SCN_INT" />
+                <ScalarProperty Name="SCN_INPIC" ColumnName="SCN_INPIC" />
+                <ScalarProperty Name="SCN_OUTD" ColumnName="SCN_OUTD" />
+                <ScalarProperty Name="SCN_OUTT" ColumnName="SCN_OUTT" />
+                <ScalarProperty Name="SCN_OUTPIC" ColumnName="SCN_OUTPIC" />
+                <ScalarProperty Name="LOTNO" ColumnName="LOTNO" />
+                <ScalarProperty Name="RKEIM" ColumnName="RKEIM" />
+                <ScalarProperty Name="THEO_QTY" ColumnName="THEO_QTY" />
+                <ScalarProperty Name="ACT_QTY" ColumnName="ACT_QTY" />
+                <ScalarProperty Name="SCN_INQ" ColumnName="SCN_INQ" />
+                <ScalarProperty Name="SCN_OUTQ" ColumnName="SCN_OUTQ" />
+                <ScalarProperty Name="KSNDAT" ColumnName="KSNDAT" />
+                <ScalarProperty Name="KSNTIM" ColumnName="KSNTIM" />
+                <ScalarProperty Name="FLG1" ColumnName="FLG1" />
+                <ScalarProperty Name="LOC_NO" ColumnName="LOC_NO" />
+                <ScalarProperty Name="PUT_IN" ColumnName="PUT_IN" />
+                <ScalarProperty Name="PUT_DATE" ColumnName="PUT_DATE" />
+                <ScalarProperty Name="PUT_TIME" ColumnName="PUT_TIME" />
+                <ScalarProperty Name="PUT_PIC" ColumnName="PUT_PIC" />
+                <ScalarProperty Name="OUT_DATE" ColumnName="OUT_DATE" />
+                <ScalarProperty Name="OUT_TIME" ColumnName="OUT_TIME" />
+                <ScalarProperty Name="OUT_PIC" ColumnName="OUT_PIC" />
+                <ScalarProperty Name="TANSUU" ColumnName="TANSUU" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TD_FDP1115">
+            <EntityTypeMapping TypeName="SmlSystemA.TD_FDP1115">
+              <MappingFragment StoreEntitySet="TD_FDP1115">
+                <ScalarProperty Name="CAB" ColumnName="CAB" />
+                <ScalarProperty Name="RACK" ColumnName="RACK" />
+                <ScalarProperty Name="PLACE" ColumnName="PLACE" />
+                <ScalarProperty Name="NMODEL" ColumnName="NMODEL" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="LIMIT" ColumnName="LIMIT" />
+                <ScalarProperty Name="TQTY" ColumnName="TQTY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
